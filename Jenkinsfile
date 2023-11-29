@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+    environment{
+        PATH="/opt/mvn-3.9.5/bin:$PATH"
+    }
     stages{
         stage('clone'){
            steps{
